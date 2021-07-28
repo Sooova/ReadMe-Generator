@@ -3,7 +3,7 @@ var inquirer = require('inquirer');
 var generateMarkdown = require('./utils/generateMarkdown');
 let fs = require('fs');
 // TODO: Create an array of questions for user input
-const questions = ["What is the title of your project?","What is the title of your project?","Please Enter installation insructions as a list, seperated by a comma:",
+const questions = ["What is the title of your project?","Please enter a description for your project","Please Enter installation insructions as a list, seperated by a comma:",
 "Please enter usage information for your project:","Please enter contribution guidelines for your project:","Please enter test information for your project:",
 "Please enter your GitHub Username:","Please Enter your email address:","Select a licence?"];
 
@@ -61,7 +61,7 @@ inquirer
                 "Mozilla Public License 1.1 (MPL 1.1)",
                 "Common Public License Version 1.0 (CPL)",
                 "Eclipse Public License 1.0",
-                "Apache License, Version 2.0"
+                "No License"
             ]
         }
     ])
